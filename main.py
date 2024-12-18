@@ -11,7 +11,6 @@ load_dotenv(override=True)
 
 app = Flask(__name__)
 
-# app.secret_key = os.getenv("APP_SECRET")
 KEYCLOAK_SERVER_URL = os.getenv("KEYCLOAK_SERVER_URL")
 KEYCLOAK_REALM = os.getenv("KEYCLOAK_REALM")
 KEYCLOAK_CLIENT_ID = os.getenv("KEYCLOAK_CLIENT_ID")
@@ -82,3 +81,4 @@ def logout():
 
 if __name__ == '__main__':
     app.run(debug=True)
+

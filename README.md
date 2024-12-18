@@ -45,7 +45,6 @@ The sequence diagram illustrates the typical interactions between system compone
 2. Create `.env` with environment variables. Sample config:
 
    ```bash
-   APP_SECRET=<APP_SECRET>
    CA_PATH=/app/certs/ca.crt
    KEYCLOAK_SERVER_URL=https://keycloak.internal.test
    KEYCLOAK_REALM=myrealm
@@ -53,7 +52,7 @@ The sequence diagram illustrates the typical interactions between system compone
    KEYCLOAK_CLIENT_SECRET=<KEYCLOAK_CLIENT_SECRET>
    KEYCLOAK_REDIRECT_URI=https://app.internal.test:5000/callback
    ```
-
+   
 3. Configure domain names for `app` and `keycloak` accordingly.
 
 4. Run `keycloak` and `app` containers in the same network.
